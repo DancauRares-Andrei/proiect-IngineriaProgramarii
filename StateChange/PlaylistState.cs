@@ -31,6 +31,7 @@ namespace StateChange
                 context.Controls.Add(new AxWindowsMediaPlayer());
                 context.Controls.Add(new ListBox());
                 context.Controls.Add(new CheckBox());
+                context.Controls.Add(new CheckBox());
                 return true;
             }
             switch (context.StateNumber)

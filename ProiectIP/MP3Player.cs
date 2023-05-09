@@ -118,6 +118,7 @@ namespace ProiectIP
                     groupBox.Controls.Add(_context.Controls[0]);
                     groupBox.Controls.Add(_context.Controls[1]);
                     groupBox.Controls.Add(_context.Controls[2]);
+                    groupBox.Controls.Add(_context.Controls[3]);
                     _context.Controls[0].Location = new System.Drawing.Point(6, 27);
                     _context.Controls[0].Size = new System.Drawing.Size(498, 368);
                     List<string> melodii = new List<string>();
@@ -146,6 +147,10 @@ namespace ProiectIP
                     _context.Controls[2].Text = "Random";
                     _context.Controls[2].Size = new System.Drawing.Size(66, 17);
                     _context.Controls[2].Location = new System.Drawing.Point(740, 27);
+                    _context.Controls[3].Text = "Loop";
+                    ((CheckBox)_context.Controls[3]).CheckedChanged += MP3Player_CheckedChanged;
+                    _context.Controls[3].Size = new System.Drawing.Size(66, 17);
+                    _context.Controls[3].Location = new System.Drawing.Point(740, 47);
                 }
             }
             catch (Exception ex)
@@ -153,6 +158,27 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void MP3Player_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CheckBox checkBox = (CheckBox)sender;
+                if (checkBox.Checked)
+                {
+                    ((AxWindowsMediaPlayer)_context.Controls[0]).settings.setMode("loop", true);
+                }
+                else
+                {
+                    ((AxWindowsMediaPlayer)_context.Controls[0]).settings.setMode("loop", false);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void listBoxPlaylist_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -174,8 +200,8 @@ namespace ProiectIP
         {
             try
             {
-                if (e.newState == 8)
-                {
+                if (e.newState == 8 && ((CheckBox)_context.Controls[3]).Checked==false)
+                { 
                     timer.Enabled = true;
                 }
             }
