@@ -49,16 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MP3Player.cs">
+    <Compile Include="TuneWave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MP3Player.Designer.cs">
-      <DependentUpon>MP3Player.cs</DependentUpon>
+    <Compile Include="TuneWave.Designer.cs">
+      <DependentUpon>TuneWave.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MP3Player.resx">
-      <DependentUpon>MP3Player.cs</DependentUpon>
+    <EmbeddedResource Include="TuneWave.resx">
+      <DependentUpon>TuneWave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

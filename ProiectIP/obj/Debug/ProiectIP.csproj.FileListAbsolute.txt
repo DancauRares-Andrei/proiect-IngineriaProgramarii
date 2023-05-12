@@ -75,10 +75,10 @@ C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\Interop
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\Interop.WMPLib.dll
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.csproj.ResolveComReference.cache
-C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.MP3Player.resources
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.Properties.Resources.resources
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.csproj.GenerateResource.cache
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.csproj.CopyComplete
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.exe
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.pdb
+C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.TuneWave.resources

@@ -42,13 +42,15 @@ namespace ProiectIP
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.operatiiToolStripMenuItem});
+            this.operatiiToolStripMenuItem,
+            this.ajutorToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(834, 24);
@@ -122,6 +124,13 @@ namespace ProiectIP
             // 
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // ajutorToolStripMenuItem
+            // 
+            this.ajutorToolStripMenuItem.Name = "ajutorToolStripMenuItem";
+            this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.ajutorToolStripMenuItem.Text = "Ajutor";
+            this.ajutorToolStripMenuItem.Click += new System.EventHandler(this.ajutorToolStripMenuItem_Click);
+            // 
             // TuneWave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +163,7 @@ namespace ProiectIP
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.ToolStripMenuItem modificarePlaylistExistentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ascultarePostRadioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajutorToolStripMenuItem;
     }
 }
 

@@ -503,5 +503,17 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void ajutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\TuneWave.chm");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
