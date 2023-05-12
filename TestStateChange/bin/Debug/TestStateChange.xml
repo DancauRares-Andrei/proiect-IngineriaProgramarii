@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestStateChange</name>
+    </assembly>
+    <members>
+        <member name="T:TestStateChange.ITestState">
+            <summary>
+            Interfata ce va testa fiecare clasa
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este sau nu EditPlaylistState
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este sau nu MakePlaylistState
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este sau nu PlaylistState
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestRadio">
+            <summary>
+            Testam daca starea contextului este sau nu RadioState
+            </summary>
+        </member>
+        <member name="M:TestStateChange.ITestState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este sau nu SingleFileState
+            </summary>
+        </member>
+        <member name="T:TestStateChange.TestEditPlaylistState">
+            <summary>
+            Clasa ce testeaza EditPlaylistState
+            </summary>
+        </member>
+        <member name="F:TestStateChange.TestEditPlaylistState._context">
+            <summary>
+            Contextul a carei functionalitate va fi testata
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.#ctor">
+            <summary>
+            Constructorul in care se creeaza contextul si se seteaza starea dorita
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este MakePlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este PlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestRadio">
+            <summary>
+            Testam daca starea contextului este RadioState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este SingleFileState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestEditPlaylistState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este EditPlaylistState, si ar trebui sa fie
+            </summary>
+        </member>
+        <member name="T:TestStateChange.TestMakePlaylistState">
+            <summary>
+            Clasa ce testeaza MakePlaylistState
+            </summary>
+        </member>
+        <member name="F:TestStateChange.TestMakePlaylistState._context">
+            <summary>
+            Contextul a carei functionalitate va fi testata
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.#ctor">
+            <summary>
+            Constructorul in care se creeaza contextul si se seteaza starea dorita
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este MakePlaylistState, si ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este PlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestRadio">
+            <summary>
+            Testam daca starea contextului este RadioState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este SingleFileState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestMakePlaylistState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este EditPlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="T:TestStateChange.TestPlaylistState">
+            <summary>
+            Clasa ce testeaza PlaylistState
+            </summary>
+        </member>
+        <member name="F:TestStateChange.TestPlaylistState._context">
+            <summary>
+            Contextul a carei functionalitate va fi testata
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.#ctor">
+            <summary>
+            Constructorul in care se creeaza contextul si se seteaza starea dorita
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este MakePlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este PlaylistState, si ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestRadio">
+            <summary>
+            Testam daca starea contextului este RadioState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este SingleFileState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestPlaylistState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este EditPlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="T:TestStateChange.TestRadioState">
+            <summary>
+            Clasa ce testeaza RadioState
+            </summary>
+        </member>
+        <member name="F:TestStateChange.TestRadioState._context">
+            <summary>
+            Contextul a carei functionalitate va fi testata
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.#ctor">
+            <summary>
+            Constructorul in care se creeaza contextul si se seteaza starea dorita
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este MakePlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este PlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestRadio">
+            <summary>
+            Testam daca starea contextului este RadioState, si ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este SingleFileState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestRadioState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este EditPlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="T:TestStateChange.TestSingleFileState">
+            <summary>
+            Clasa ce testeaza SingleFileState
+            </summary>
+        </member>
+        <member name="F:TestStateChange.TestSingleFileState._context">
+            <summary>
+            Contextul a carei functionalitate va fi testata
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.#ctor">
+            <summary>
+            Constructorul in care se creeaza contextul si se seteaza starea dorita
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestTrue">
+            <summary>
+            Testam daca se returneaza true la iesirea din functia Request a contextului
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestMakePlaylist">
+            <summary>
+            Testam daca starea contextului este MakePlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestPlaylist">
+            <summary>
+            Testam daca starea contextului este PlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestRadio">
+            <summary>
+            Testam daca starea contextului este RadioState, si nu ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestSingleFile">
+            <summary>
+            Testam daca starea contextului este SingleFileState, si ar trebui sa fie
+            </summary>
+        </member>
+        <member name="M:TestStateChange.TestSingleFileState.TestEditPlaylist">
+            <summary>
+            Testam daca starea contextului este EditPlaylistState, si nu ar trebui sa fie
+            </summary>
+        </member>
+    </members>
+</doc>

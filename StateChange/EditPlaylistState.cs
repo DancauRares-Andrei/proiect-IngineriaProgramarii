@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        EditPlaylistState.cs                                     *
- *  Copyright:   (c) 2023, Dancău Rareș-Andrei                            *
+ *  Copyright:   (c) 2023, Rareș-Andrei Dancău                            *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -24,7 +24,7 @@ namespace StateChange
     /// <summary>
     /// Clasa folosita de context in cazul in care se modifica un playlist existent
     /// </summary>
-    class EditPlaylistState : IState
+   public class EditPlaylistState : IState
     {
         /// <summary>
         /// Functie in care se schimba starea contextului, daca StateNumber nu corespunde sau se inserează controalele în context dacă există corespondența.

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProiectIP", "ProiectIP\Proi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateChange", "StateChange\StateChange.csproj", "{A63EF103-230D-4296-A4E3-D9C4167FF75E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStateChange", "TestStateChange\TestStateChange.csproj", "{F2F38026-DF27-4076-BBBD-D634AE60C03A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A63EF103-230D-4296-A4E3-D9C4167FF75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63EF103-230D-4296-A4E3-D9C4167FF75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63EF103-230D-4296-A4E3-D9C4167FF75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F38026-DF27-4076-BBBD-D634AE60C03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F38026-DF27-4076-BBBD-D634AE60C03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F38026-DF27-4076-BBBD-D634AE60C03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F38026-DF27-4076-BBBD-D634AE60C03A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        Context.cs                                               *
- *  Copyright:   (c) 2023, Dancău Rareș-Andrei                            *
+ *  Copyright:   (c) 2023, Rareș-Andrei Dancău                            *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -52,7 +52,7 @@ namespace StateChange
         /// <summary>
         /// Metoda Request este folosita pentru a solicita incarcarea controalelor
         /// </summary>
-        public void Request()
+        public bool Request()
         {
             //Se incearca incarcarea controalelor cu starea curenta                
             if (!State.Handle(this))
@@ -60,6 +60,7 @@ namespace StateChange
                 //Daca s-a revenit pe false, inseamna ca s-a schimbat starea si trebuie facuta incarcarea controalelor
                 State.Handle(this);
             }
+            return true;
         }
     }
 }

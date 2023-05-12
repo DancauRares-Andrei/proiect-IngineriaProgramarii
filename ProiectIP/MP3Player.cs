@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        MP3Player.cs                                             *
- *  Copyright:   (c) 2023, Dancău Rareș-Andrei                            *
+ *  Copyright:   (c) 2023, Rareș-Andrei Dancău                            *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
