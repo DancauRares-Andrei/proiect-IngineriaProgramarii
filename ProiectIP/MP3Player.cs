@@ -29,15 +29,15 @@ namespace ProiectIP
 {
     public partial class MP3Player : Form
     {
-        private Context _context;
+        private readonly Context _context;
         public MP3Player()
         {
             InitializeComponent();
-            _context = new Context(new SingleFileState());
+            _context = new Context();
             
         }
 
-        private void deschidereFisierToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeschidereFisierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try {
                 openFileDialog.Filter = "Audio file(*.mp3)|*.mp3";
@@ -68,7 +68,7 @@ namespace ProiectIP
             }
         }
 
-        private void iesireToolStripMenuItem_Click(object sender, EventArgs e)
+        private void IesireToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -80,7 +80,7 @@ namespace ProiectIP
             }
         }
 
-        private void deschiderePlaylistToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeschiderePlaylistToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try {
                 openFileDialog.Filter = "Playlist(*.txt)|*.txt";
@@ -105,7 +105,7 @@ namespace ProiectIP
                     ((ListBox)_context.Controls[1]).ValueMember = "Path";
 
 
-                    ((ListBox)_context.Controls[1]).SelectedIndexChanged += listBoxPlaylist_SelectedIndexChanged;
+                    ((ListBox)_context.Controls[1]).SelectedIndexChanged += ListBoxPlaylist_SelectedIndexChanged;
                     ((AxWindowsMediaPlayer)_context.Controls[0]).URL = ((dynamic)((ListBox)_context.Controls[1]).SelectedItem).Path;
                 }
                 else
@@ -141,9 +141,9 @@ namespace ProiectIP
                     ((ListBox)_context.Controls[1]).ValueMember = "Path";
 
 
-                    ((ListBox)_context.Controls[1]).SelectedIndexChanged += listBoxPlaylist_SelectedIndexChanged;
+                    ((ListBox)_context.Controls[1]).SelectedIndexChanged += ListBoxPlaylist_SelectedIndexChanged;
                     ((AxWindowsMediaPlayer)_context.Controls[0]).URL = ((dynamic)((ListBox)_context.Controls[1]).SelectedItem).Path;
-                    ((AxWindowsMediaPlayer)_context.Controls[0]).PlayStateChange += axWindowsMediaPlayer1_PlayStateChange;
+                    ((AxWindowsMediaPlayer)_context.Controls[0]).PlayStateChange += AxWindowsMediaPlayer_PlayStateChange;
                     _context.Controls[2].Text = "Random";
                     _context.Controls[2].Size = new System.Drawing.Size(66, 17);
                     _context.Controls[2].Location = new System.Drawing.Point(740, 27);
@@ -179,7 +179,7 @@ namespace ProiectIP
             }
         }
 
-        private void listBoxPlaylist_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBoxPlaylist_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -196,7 +196,7 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
-        private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        private void AxWindowsMediaPlayer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
             try
             {
@@ -210,7 +210,7 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
             try
             {
@@ -245,7 +245,7 @@ namespace ProiectIP
             }
         }
 
-        private void crearePlaylistToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CrearePlaylistToolStripMenuItem_Click(object sender, EventArgs e)
         {  
             try
             {
@@ -387,7 +387,7 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
-        private void modificarePlaylistExistentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ModificarePlaylistExistentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -439,7 +439,7 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
-        private void listBoxRadio_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBoxRadio_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -456,7 +456,7 @@ namespace ProiectIP
                 MessageBox.Show(ex.Message);
             }
         }
-        private void ascultarePostRadioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AscultarePostRadioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try{
                 groupBox.Controls.Clear();
@@ -494,7 +494,7 @@ namespace ProiectIP
                 listBox.DataSource = radioStations;
                 listBox.DisplayMember = "Name";
                 ((AxWindowsMediaPlayer)_context.Controls[0]).URL = "https://astreaming.edi.ro:8443/EuropaFM_aac";
-                listBox.SelectedIndexChanged += listBoxRadio_SelectedIndexChanged;
+                listBox.SelectedIndexChanged += ListBoxRadio_SelectedIndexChanged;
                 // ((AxWindowsMediaPlayer)_context.Controls[0]).Ctlcontrols.play();
             }
             catch(Exception ex)

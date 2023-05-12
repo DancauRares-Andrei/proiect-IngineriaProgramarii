@@ -73,42 +73,42 @@ namespace ProiectIP
             this.deschidereFisierToolStripMenuItem.Name = "deschidereFisierToolStripMenuItem";
             this.deschidereFisierToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.deschidereFisierToolStripMenuItem.Text = "Deschidere fisier";
-            this.deschidereFisierToolStripMenuItem.Click += new System.EventHandler(this.deschidereFisierToolStripMenuItem_Click);
+            this.deschidereFisierToolStripMenuItem.Click += new System.EventHandler(this.DeschidereFisierToolStripMenuItem_Click);
             // 
             // deschiderePlaylistToolStripMenuItem
             // 
             this.deschiderePlaylistToolStripMenuItem.Name = "deschiderePlaylistToolStripMenuItem";
             this.deschiderePlaylistToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.deschiderePlaylistToolStripMenuItem.Text = "Deschidere playlist";
-            this.deschiderePlaylistToolStripMenuItem.Click += new System.EventHandler(this.deschiderePlaylistToolStripMenuItem_Click);
+            this.deschiderePlaylistToolStripMenuItem.Click += new System.EventHandler(this.DeschiderePlaylistToolStripMenuItem_Click);
             // 
             // ascultarePostRadioToolStripMenuItem
             // 
             this.ascultarePostRadioToolStripMenuItem.Name = "ascultarePostRadioToolStripMenuItem";
             this.ascultarePostRadioToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.ascultarePostRadioToolStripMenuItem.Text = "Ascultare post radio";
-            this.ascultarePostRadioToolStripMenuItem.Click += new System.EventHandler(this.ascultarePostRadioToolStripMenuItem_Click);
+            this.ascultarePostRadioToolStripMenuItem.Click += new System.EventHandler(this.AscultarePostRadioToolStripMenuItem_Click);
             // 
             // crearePlaylistToolStripMenuItem
             // 
             this.crearePlaylistToolStripMenuItem.Name = "crearePlaylistToolStripMenuItem";
             this.crearePlaylistToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.crearePlaylistToolStripMenuItem.Text = "Creare playlist";
-            this.crearePlaylistToolStripMenuItem.Click += new System.EventHandler(this.crearePlaylistToolStripMenuItem_Click);
+            this.crearePlaylistToolStripMenuItem.Click += new System.EventHandler(this.CrearePlaylistToolStripMenuItem_Click);
             // 
             // modificarePlaylistExistentToolStripMenuItem
             // 
             this.modificarePlaylistExistentToolStripMenuItem.Name = "modificarePlaylistExistentToolStripMenuItem";
             this.modificarePlaylistExistentToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.modificarePlaylistExistentToolStripMenuItem.Text = "Modificare playlist existent";
-            this.modificarePlaylistExistentToolStripMenuItem.Click += new System.EventHandler(this.modificarePlaylistExistentToolStripMenuItem_Click);
+            this.modificarePlaylistExistentToolStripMenuItem.Click += new System.EventHandler(this.ModificarePlaylistExistentToolStripMenuItem_Click);
             // 
             // iesireToolStripMenuItem
             // 
             this.iesireToolStripMenuItem.Name = "iesireToolStripMenuItem";
             this.iesireToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.iesireToolStripMenuItem.Text = "Iesire";
-            this.iesireToolStripMenuItem.Click += new System.EventHandler(this.iesireToolStripMenuItem_Click);
+            this.iesireToolStripMenuItem.Click += new System.EventHandler(this.IesireToolStripMenuItem_Click);
             // 
             // groupBox
             // 
@@ -120,7 +120,7 @@ namespace ProiectIP
             // 
             // timer
             // 
-            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // MP3Player
             // 
