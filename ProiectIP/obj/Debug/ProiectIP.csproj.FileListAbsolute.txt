@@ -82,3 +82,4 @@ C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\Proiect
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.exe
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.pdb
 C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\obj\Debug\ProiectIP.TuneWave.resources
+C:\Users\Andrei Rares\source\repos\ProiectIPpersonal\ProiectIP\bin\Debug\ProiectIP.xml

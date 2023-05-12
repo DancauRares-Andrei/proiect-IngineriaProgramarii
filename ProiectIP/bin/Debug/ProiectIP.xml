@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProiectIP</name>
+    </assembly>
+    <members>
+        <member name="T:ProiectIP.TuneWave">
+            <summary>
+            Clasa principala a programului, ce extinde clasa Form
+            </summary>
+        </member>
+        <member name="F:ProiectIP.TuneWave._context">
+            <summary>
+            Contextul folosit de program pentru a schimba controalele din groupBox
+            </summary>
+        </member>
+        <member name="M:ProiectIP.TuneWave.#ctor">
+            <summary>
+            Constructor ce initializeaza componentele Form-ului si apeleaza contructorul contextului
+            </summary>
+        </member>
+        <member name="M:ProiectIP.TuneWave.DeschidereFisierToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa "Deschidere fisier"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.IesireToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa "Iesire"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.DeschiderePlaylistToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata cand se apasa "Deschidere playlist"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.PlaylistLoop_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe checkbox-ul Loop din playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.ListBoxPlaylist_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se schimba melodia selectata din playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.AxWindowsMediaPlayer_PlayStateChange(System.Object,AxWMPLib._WMPOCXEvents_PlayStateChangeEvent)">
+            <summary>
+            Functie apelata atunci cand obiectul AxWindowsMediaPlayer isi schimba starea
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.Timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand trece perioada unui timer
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.CrearePlaylistToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe "Creare playlist"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.SaveButtonClickAddPlaylist(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe butonul de salvare din creare playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.AddButtonClickMakePlaylist(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe butonul de adaugare cantec din creare playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.AddButtonClickEditPlaylist(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe butonul de adaugare cantec din modificare playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.RemoveButtonClickEditPlaylist(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe butonul de stergere a indexului curent din editare playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.SaveButtonClickEditPlaylist(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe butonul de salvare playlist modificat din creare playlist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.ModificarePlaylistExistentToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe meniul Modificare playlist existent
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.ListBoxRadio_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se modifica indexul selectat din listbox de la radio
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.AscultarePostRadioToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe meniul de ascultare post radio
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.AjutorToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Functie apelata atunci cand se apasa pe meniul ajutor
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProiectIP.TuneWave.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.TuneWave.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.TuneWave.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

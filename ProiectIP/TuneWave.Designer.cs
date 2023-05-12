@@ -129,7 +129,7 @@ namespace ProiectIP
             this.ajutorToolStripMenuItem.Name = "ajutorToolStripMenuItem";
             this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.ajutorToolStripMenuItem.Text = "Ajutor";
-            this.ajutorToolStripMenuItem.Click += new System.EventHandler(this.ajutorToolStripMenuItem_Click);
+            this.ajutorToolStripMenuItem.Click += new System.EventHandler(this.AjutorToolStripMenuItem_Click);
             // 
             // TuneWave
             // 
