@@ -1,7 +1,8 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        MP3Player.cs                                             *
+ *  File:        TuneWave.cs                                              *
  *  Copyright:   (c) 2023, Rareș-Andrei Dancău                            *
+ *  Description: Clasa ce implementeaza un mp3 player                     *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -27,10 +28,10 @@ using System.Windows.Forms;
 
 namespace ProiectIP
 {
-    public partial class MP3Player : Form
+    public partial class TuneWave : Form
     {
         private readonly Context _context;
-        public MP3Player()
+        public TuneWave()
         {
             InitializeComponent();
             _context = new Context();

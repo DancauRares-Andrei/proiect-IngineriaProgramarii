@@ -1,7 +1,7 @@
 ﻿
 namespace ProiectIP
 {
-    partial class MP3Player
+    partial class TuneWave
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@ namespace ProiectIP
             // 
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // MP3Player
+            // TuneWave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,8 +132,8 @@ namespace ProiectIP
             this.HelpButton = true;
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
-            this.Name = "MP3Player";
-            this.Text = "MP3 Player";
+            this.Name = "TuneWave";
+            this.Text = "TuneWave";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);

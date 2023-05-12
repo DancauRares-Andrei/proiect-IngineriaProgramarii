@@ -16,7 +16,7 @@ namespace ProiectIP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MP3Player());
+            Application.Run(new TuneWave());
         }
     }
 }
