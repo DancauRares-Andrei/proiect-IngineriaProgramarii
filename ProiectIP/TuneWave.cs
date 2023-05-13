@@ -592,15 +592,15 @@ namespace ProiectIP
                 _context.Controls[1].Size = new System.Drawing.Size(270, 368);
                 _context.Controls[1].Size = new System.Drawing.Size(270, 368);
                 var radioStations = new List<object>
-{
-    new { Name = "Europa FM", Url = "https://astreaming.edi.ro:8443/EuropaFM_aac" },
-    new { Name = "Kiss FM", Url = "https://live.kissfm.ro:8443/kissfm.aacp" },
-    new { Name = "Magic FM", Url = "https://live.magicfm.ro:8443/magicfm.aacp" },
-    new { Name = "Pro FM", Url = "https://edge126.rcs-rds.ro/profm/profm.mp3" },
-    new { Name = "Radio ZU", Url = "http://zuicast.digitalag.ro:9420/zu" },
-    new { Name = "Digi FM", Url = "http://edge76.rdsnet.ro:84/digifm/digifm.mp3" },
-    new { Name = "Virgin Radio", Url = "https://astreaming.edi.ro:8443/VirginRadio_aac" }
-};
+                {
+                    new { Name = "Europa FM", Url = "https://astreaming.edi.ro:8443/EuropaFM_aac" },
+                    new { Name = "Kiss FM", Url = "https://live.kissfm.ro:8443/kissfm.aacp" },
+                    new { Name = "Magic FM", Url = "https://live.magicfm.ro:8443/magicfm.aacp" },
+                    new { Name = "Pro FM", Url = "https://edge126.rcs-rds.ro/profm/profm.mp3" },
+                    new { Name = "Radio ZU", Url = "http://zuicast.digitalag.ro:9420/zu" },
+                    new { Name = "Digi FM", Url = "http://edge76.rdsnet.ro:84/digifm/digifm.mp3" },
+                    new { Name = "Virgin Radio", Url = "https://astreaming.edi.ro:8443/VirginRadio_aac" }
+                };
 
                 var listBox = (ListBox)_context.Controls[1];
                 listBox.DataSource = radioStations;

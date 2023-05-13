@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2023-05-13T16:16:42.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="5hyGMXhTAvRAEO9yFlib" version="21.3.0" type="device">
+  <diagram name="Pagina-1" id="0mUiDwWGVpkNlT__qzqu">
+    <mxGraphModel dx="934" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="K_5uVWaHuatnId3TePY4-8" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="460" y="90" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="K_5uVWaHuatnId3TePY4-8" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-13" value="Apăsare pe Meniu" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="180" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="K_5uVWaHuatnId3TePY4-13" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-18" value="Apăsare pe Ascultare post radio" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-19" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="K_5uVWaHuatnId3TePY4-18" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-43" value="Utilizatorul a schimbat postul radio" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="417.5" y="380" width="115" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-44" value="Nu" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="K_5uVWaHuatnId3TePY4-43" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="610" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-45" value="Da" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="K_5uVWaHuatnId3TePY4-43" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="475" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-46" value="Redau conținutul curent" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="390" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-47" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" source="K_5uVWaHuatnId3TePY4-46" parent="1" target="K_5uVWaHuatnId3TePY4-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="460" />
+              <mxPoint x="750" y="460" />
+              <mxPoint x="750" y="360" />
+              <mxPoint x="522" y="360" />
+              <mxPoint x="522" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-48" value="Redau noul conținut" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="412.5" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_5uVWaHuatnId3TePY4-49" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.08;entryY=0.547;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="K_5uVWaHuatnId3TePY4-48" parent="1" target="K_5uVWaHuatnId3TePY4-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="472" y="552" />
+              <mxPoint x="350" y="552" />
+              <mxPoint x="350" y="424" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
