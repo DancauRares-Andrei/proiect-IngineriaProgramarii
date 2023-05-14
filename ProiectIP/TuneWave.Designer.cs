@@ -39,10 +39,10 @@ namespace ProiectIP
             this.crearePlaylistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarePlaylistExistentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iesireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +112,13 @@ namespace ProiectIP
             this.iesireToolStripMenuItem.Text = "Iesire";
             this.iesireToolStripMenuItem.Click += new System.EventHandler(this.IesireToolStripMenuItem_Click);
             // 
+            // ajutorToolStripMenuItem
+            // 
+            this.ajutorToolStripMenuItem.Name = "ajutorToolStripMenuItem";
+            this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.ajutorToolStripMenuItem.Text = "Ajutor";
+            this.ajutorToolStripMenuItem.Click += new System.EventHandler(this.AjutorToolStripMenuItem_Click);
+            // 
             // groupBox
             // 
             this.groupBox.Location = new System.Drawing.Point(13, 28);
@@ -123,13 +130,6 @@ namespace ProiectIP
             // timer
             // 
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
-            // 
-            // ajutorToolStripMenuItem
-            // 
-            this.ajutorToolStripMenuItem.Name = "ajutorToolStripMenuItem";
-            this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.ajutorToolStripMenuItem.Text = "Ajutor";
-            this.ajutorToolStripMenuItem.Click += new System.EventHandler(this.AjutorToolStripMenuItem_Click);
             // 
             // TuneWave
             // 
