@@ -117,18 +117,17 @@ namespace ProiectIP
                 openFileDialog.Filter = "Playlist(*.txt)|*.txt";
                 if (openFileDialog.ShowDialog() != DialogResult.OK)
                     return;
+                List<string> melodii = new List<string>();
+                StreamReader sr = new StreamReader(Path.GetFullPath(openFileDialog.FileName));
+                string[] lvls = sr.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                sr.Close();
+                for (int i = 0; i < lvls.Length; i++)
+                    melodii.Add(lvls[i]);
+                // Crearea listei cu perechi cheie-valoare (calea completa la fisier - numele fisierului)
+                var files = melodii.Select(path => new { Path = path, FileName = Path.GetFileName(path) }).ToList();
                 //Daca starea anterioara a fost PlaylistState, doar reactualizez lista si redau noul prim fisier al playlist-ului.
                 if (_context.StateNumber == MP3PlayerStates.PlaylistState)
                 {
-                    List<string> melodii = new List<string>();
-                    StreamReader sr = new StreamReader(Path.GetFullPath(openFileDialog.FileName));
-                    string[] lvls = sr.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                    sr.Close();
-                    for (int i = 0; i < lvls.Length; i++)
-                        melodii.Add(lvls[i]);
-                    // Crearea listei cu perechi cheie-valoare (calea completa la fisier - numele fisierului)
-                    var files = melodii.Select(path => new { Path = path, FileName = Path.GetFileName(path) }).ToList();
-
                     // Setarea DataSource-ului pentru ListBox
                     ((ListBox)_context.Controls[1]).DataSource = files;
 
@@ -154,17 +153,9 @@ namespace ProiectIP
                     groupBox.Controls.Add(_context.Controls[3]);
                     _context.Controls[0].Location = new System.Drawing.Point(6, 27);
                     _context.Controls[0].Size = new System.Drawing.Size(498, 368);
-                    List<string> melodii = new List<string>();
-                    StreamReader sr = new StreamReader(Path.GetFullPath(openFileDialog.FileName));
-                    string[] lvls = sr.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                    sr.Close();
-                    for (int i = 0; i < lvls.Length; i++)
-                        melodii.Add(lvls[i]);
                     _context.Controls[1].Location = new System.Drawing.Point(531, 27);
                     _context.Controls[1].Size = new System.Drawing.Size(200, 368);
                     ((ListBox)_context.Controls[1]).HorizontalScrollbar = true;
-                    // Crearea listei cu perechi cheie-valoare (calea completa la fisier - numele fisierului)
-                    var files = melodii.Select(path => new { Path = path, FileName = Path.GetFileName(path) }).ToList();
 
                     // Setarea DataSource-ului pentru ListBox
                     ((ListBox)_context.Controls[1]).DataSource = files;
