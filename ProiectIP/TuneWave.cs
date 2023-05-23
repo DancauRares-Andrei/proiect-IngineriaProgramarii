@@ -156,7 +156,13 @@ namespace ProiectIP
                     _context.Controls[1].Location = new System.Drawing.Point(531, 27);
                     _context.Controls[1].Size = new System.Drawing.Size(200, 368);
                     ((ListBox)_context.Controls[1]).HorizontalScrollbar = true;
-
+                    _context.Controls[2].Text = "Random";
+                    _context.Controls[2].Size = new System.Drawing.Size(66, 17);
+                    _context.Controls[2].Location = new System.Drawing.Point(740, 27);
+                    _context.Controls[3].Text = "Loop";
+                    ((CheckBox)_context.Controls[3]).CheckedChanged += PlaylistLoop_CheckedChanged;
+                    _context.Controls[3].Size = new System.Drawing.Size(66, 17);
+                    _context.Controls[3].Location = new System.Drawing.Point(740, 47);
                     // Setarea DataSource-ului pentru ListBox
                     ((ListBox)_context.Controls[1]).DataSource = files;
 
@@ -167,14 +173,7 @@ namespace ProiectIP
 
                     ((ListBox)_context.Controls[1]).SelectedIndexChanged += ListBoxPlaylist_SelectedIndexChanged;
                     ((AxWindowsMediaPlayer)_context.Controls[0]).URL = ((dynamic)((ListBox)_context.Controls[1]).SelectedItem).Path;
-                    ((AxWindowsMediaPlayer)_context.Controls[0]).PlayStateChange += AxWindowsMediaPlayer_PlayStateChange;
-                    _context.Controls[2].Text = "Random";
-                    _context.Controls[2].Size = new System.Drawing.Size(66, 17);
-                    _context.Controls[2].Location = new System.Drawing.Point(740, 27);
-                    _context.Controls[3].Text = "Loop";
-                    ((CheckBox)_context.Controls[3]).CheckedChanged += PlaylistLoop_CheckedChanged;
-                    _context.Controls[3].Size = new System.Drawing.Size(66, 17);
-                    _context.Controls[3].Location = new System.Drawing.Point(740, 47);
+                    ((AxWindowsMediaPlayer)_context.Controls[0]).PlayStateChange += AxWindowsMediaPlayer_PlayStateChange;                
                 }
             }
             catch (Exception ex)
