@@ -1,2 +1,1 @@
-# ProiectIP2023personal
-Versiune personală a proiectului de la disciplina Ingineria Programării
+În cadrul acestui proiect am implementat un MP3Player ce permite ascultarea de melodii și posturi radio, folosind modelul de proiectare State.
